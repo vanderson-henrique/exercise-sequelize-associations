@@ -1,3 +1,4 @@
+// Exercício 2 - Crie o model de Patients (1:1)
 const createPatients = (sequelize, DataTypes) => {
   const Patients = sequelize.define('Patients', {
     patient_id: { primaryKey: true, type: DataTypes.INTEGER },

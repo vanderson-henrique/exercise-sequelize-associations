@@ -1,5 +1,6 @@
 const { Patients, Plans, Surgeries } = require('../models');
 
+// #5 Crie um endpoint que liste todos os pacientes e seus respectivos planos.
 const getPatientsWithPlan = async (req, res) => {
   try {
     const result = await Patients.findAll({
@@ -10,6 +11,7 @@ const getPatientsWithPlan = async (req, res) => {
   }
 };
 
+// #6 Crie um endpoint que liste todos os pacientes e suas respectivas cirurgias realizadas.
 const getPatientsAndSurgeries = async (req, res) => {
   try {
     const result = await Patients.findAll({
@@ -21,6 +23,7 @@ const getPatientsAndSurgeries = async (req, res) => {
   }
 };
 
+// #B2 Crie um endpoint que liste todos os pacientes e suas cirurgias realizadas, mas oculte o nome do médico responsável.
 const getPatientsSurgeriesWithoutDoctor = async (req, res) => {
   try {
     const result = await Patients.findAll({
@@ -37,6 +40,7 @@ const getPatientsSurgeriesWithoutDoctor = async (req, res) => {
   }
 }
 
+// #7 Crie um endpoint que de acordo com o id de um plano, que deve ser recebido via requisição, liste os pacientes que o possuem.
 const getPatientsByPlan = async (req, res) => {
   try {
     const { id } = req.params;
@@ -50,6 +54,7 @@ const getPatientsByPlan = async (req, res) => {
   }
 };
 
+// #B1 - Crie um endpoint capaz de adicionar um novo paciente.
 const addPatient = async (req, res) => {
   try {
     const { fullname, plan_id } = req.body;

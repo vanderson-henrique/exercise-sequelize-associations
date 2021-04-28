@@ -1,3 +1,4 @@
+// Exercício 3 - Crie o model de Surgeries.
 const createSurgeries = (sequelize, DataTypes) => {
   const Surgeries = sequelize.define('Surgeries', {
     surgery_id: { primaryKey: true, type: DataTypes.INTEGER },

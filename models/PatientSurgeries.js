@@ -1,3 +1,4 @@
+// Exercício 4 - Crie o model de Patient_surgeries. (N:N)
 const createPatientSurgeries = (sequelize, DataTypes) => {
   const Patient_surgeries = sequelize.define('Patient_surgeries', {},
   { timestamps: false });

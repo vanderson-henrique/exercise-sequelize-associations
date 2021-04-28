@@ -1,3 +1,4 @@
+// Exercício 1 - Crie o model de Plans. (1:N)
 const createPlans = (sequelize, DataTypes) => {
   const Plans = sequelize.define('Plans', {
     plan_id: { type: DataTypes.INTEGER, primaryKey: true },

@@ -8,7 +8,8 @@ module.exports = {
         {
           fullname: 'Alberto Dos Santos',
           plan_id: 1,
-        },        {
+        },
+        {
           fullname: 'Maria Silveira Rodrigues',
           plan_id: 3,
         },
